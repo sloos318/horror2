@@ -1,3 +1,14 @@
+:root {
+    --color-detail-yellow: #FCC45C;
+    --color-hover-yellow: #FFE6B8;
+    --color-press-yellow: #FFA600;
+    --color-background: #1D1D1D;
+    --color-background-detail: #100F0A;
+    --color-text-white: #FFFFFF;
+    --color-text-gray: #F1F0F0;
+    --color-text-darkgray: #ACACAC;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
@@ -11,6 +22,21 @@ body {
   background: #333;
   color: #fff;
   line-height: 1.6;
+}
+
+#buttondonate {
+    background-color: var(--color-background);
+    color: var(--color-text-gray);
+    grid-column-start: 3;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 1em;
+    align-self: self-start;
+    border: 0px solid;
+    filter: drop-shadow(5px 5px 5px #000)
+    
 }
 
 img:nth-of-type(1) {

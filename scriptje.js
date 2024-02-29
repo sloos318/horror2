@@ -1,6 +1,8 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
+const donate = document.getElementById('buttondonate')
+const show = document.getElementById('showdonate')
 const auto = false; // Auto scroll
 const intervalTime = 5000;
 let slideInterval;
@@ -59,4 +61,14 @@ if (auto) {
   // Run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
+
+donate.addEventListener('click', () =>{
+    if (show.style.display === 'none'){
+        show.style.display = 'block'
+    } else {
+        show.style.display = 'none'
+    }
+})
+
 
